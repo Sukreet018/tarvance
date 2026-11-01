@@ -168,7 +168,17 @@ export default function PageTransition() {
         // <Link> skip its own navigation (it still runs the link's onClick, e.g. closing the menu).
         event.preventDefault();
         if (isTransitioning.current) return;
-        cover(url.pathname + url.search + url.hash);
+        // The router adds the site's base path (e.g. /tarvance on GitHub Pages) by itself,
+        // so hand it a path WITHOUT that prefix or it gets doubled (/tarvance/tarvance/about).
+        const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+        let routerPath = url.pathname;
+        if (
+          base &&
+          (routerPath === base || routerPath.startsWith(`${base}/`))
+        ) {
+          routerPath = routerPath.slice(base.length) || "/";
+        }
+        cover(routerPath + url.search + url.hash);
       };
       document.addEventListener("click", onClick, true);
 
@@ -220,7 +230,6 @@ export default function PageTransition() {
       aria-hidden="true"
     >
       {Array.from({ length: BLOCK_COUNT }, (_, i) => (
-       
         <div
           key={i}
           data-block
