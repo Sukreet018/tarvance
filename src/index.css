@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@plugin "tailwindcss-motion";
+
+/* -------------------------------------------------------------------------- */
+/* Theme: brand colours, fonts and the few animations Tailwind doesn't ship    */
+/* -------------------------------------------------------------------------- */
+@theme {
+    --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Instrument Serif", "Times New Roman", serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+    --color-tar-navy: #07163f;
+    --color-tar-blue: #153b9b;
+    --color-tar-royal: #254fca;
+    --color-tar-sky: #7faaff;
+    --color-tar-cream: #f4efe2;
+    --color-tar-paper: #fbf9f2;
+    --color-tar-ink: #101c37;
+
+    /* animate-bob: gentle idle float (tech logos) */
+    --animate-bob: bob 5s ease-in-out infinite;
+    @keyframes bob {
+        50% {
+            transform: translate3d(0, -8px, 0);
+        }
+    }
+
+    /* animate-marquee-left / -right: endless loop of a track that holds two identical groups */
+    --animate-marquee-left: marquee-left 38s linear infinite;
+    --animate-marquee-right: marquee-right 44s linear infinite;
+    @keyframes marquee-left {
+        to {
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
+    @keyframes marquee-right {
+        from {
+            transform: translate3d(-50%, 0, 0);
+        }
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Base                                                                        */
+/* -------------------------------------------------------------------------- */
+@layer base {
+    html {
+        /* keeps the layout from shifting when scrolling is locked during page transitions */
+        scrollbar-gutter: stable;
+    }
+    body {
+        @apply min-w-80 bg-tar-paper font-sans text-tar-ink antialiased selection:bg-[#bed0ff] selection:text-tar-navy;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Shared building blocks (used across many pages)                             */
+/* -------------------------------------------------------------------------- */
+/* Page-width column, centred */
+@utility site-container {
+    margin-inline: auto;
+    width: min(1180px, calc(100% - 48px));
+    @media (width < 48rem) {
+        width: min(1180px, calc(100% - 32px));
+    }
+}
+
+/* Vertical padding between page sections */
+@utility section-pad {
+    padding-block: clamp(76px, 9vw, 132px);
+}
+
+/* Small mono label with a rule in front of it */
+@utility eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: #3558a8;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    &::before {
+        content: "";
+        display: block;
+        width: 26px;
+        height: 1px;
+        background: currentColor;
+    }
+}
+
+/* Large serif headings. --tw-leading is Tailwind's own line-height variable, so this still wins
+   over the line-height that text-4xl / text-5xl etc. would otherwise apply. */
+@utility display-heading {
+    --tw-leading: 0.98;
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.98;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Smooth scrolling (Lenis) - these class names are set by the library          */
+/* -------------------------------------------------------------------------- */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Accessibility: calm everything down for people who ask for less motion       */
+/* -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

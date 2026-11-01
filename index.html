@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07163f" />
+    <meta name="description" content="TarVance is a Kolkata-based software company. We build custom software and websites, and set up Google Business Profiles for businesses." />
+    <meta property="og:title" content="TarVance — Build. Connect. Grow." />
+    <meta property="og:description" content="Custom software, websites, Google Business Profile setup and SEO for businesses in Kolkata and beyond." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      // 1) Restore the real URL after the GitHub Pages 404.html redirect.
+      // 2) Old live-site links used hash URLs (tarvance.com/#/contact); forward them to /contact.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) { return s.replace(/~and~/g, '&'); }).join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        } else if (l.hash.indexOf('#/') === 0) {
+          window.history.replaceState(null, null, l.hash.slice(1));
+        }
+      })(window.location);
+    </script>
+    <title>TarVance — Build. Connect. Grow.</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
