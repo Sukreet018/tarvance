@@ -1,4 +1,4 @@
-import { ArrowLeft } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import { button } from "../components/ui/button";
 
@@ -13,7 +13,7 @@ export default function NotFoundPage() {
         The link might be broken, or the page may have moved.
       </p>
       <Link className={button("primary", "md", "mt-7")} to="/">
-        <ArrowLeft size={16} /> Back to home
+         Back to home
       </Link>
     </section>
   );

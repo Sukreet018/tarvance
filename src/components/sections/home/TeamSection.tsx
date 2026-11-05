@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import Reveal from "../../ui/Reveal";
 import TeamGrid from "../../ui/TeamGrid";
@@ -38,7 +38,7 @@ export default function TeamSection({
                   to="/about"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#244ec4]"
                 >
-                  More about us <ArrowUpRight size={16} />
+                  More about us 
                 </Link>
               )}
             </div>

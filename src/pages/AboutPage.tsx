@@ -1,4 +1,4 @@
-import { ArrowUpRight, CheckCircle2, HeartHandshake } from "lucide-react";
+import {  CheckCircle2, HeartHandshake } from "lucide-react";
 import { Link } from "react-router-dom";
 import { principles } from "../data/siteData";
 import ZoomHero from "../components/visuals/ZoomHero";
@@ -170,7 +170,7 @@ export default function AboutPage() {
                   to="/contact"
                   className="inline-flex shrink-0 items-center gap-1 text-sm font-bold text-[#244ec4] sm:ml-auto"
                 >
-                  Get in touch <ArrowUpRight size={15} />
+                  Get in touch 
                 </Link>
               </div>
             </div>

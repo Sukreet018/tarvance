@@ -5,7 +5,7 @@ import {
   useTransform,
   type MotionValue,
 } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import { services, type Service } from "../../../data/siteData";
 import { useScrollProgress } from "../../../lib/scroll";
@@ -91,10 +91,6 @@ function Chapter({ service, index }: { service: Service; index: number }) {
               className="group mt-8 inline-flex items-center gap-2 border-b border-[#244ec4]/30 pb-1 text-sm font-bold text-[#244ec4] transition hover:border-[#244ec4]"
             >
               Ask about this
-              <ArrowUpRight
-                size={16}
-                className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
             </Link>
           </Reveal>
         </div>
@@ -172,7 +168,7 @@ export default function ExpertiseSection() {
               to="/about"
               className={button("quiet", "lg", "self-start lg:self-auto")}
             >
-              About us <ArrowUpRight size={17} />
+              About us 
             </Link>
           </div>
         </Reveal>
