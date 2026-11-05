@@ -32,7 +32,7 @@ export default function Navbar() {
             alt="TarVance logo"
             className="h-10 w-10 rounded-full border border-white/15 object-cover transition-colors group-hover:border-[#8bb6ff]/70 sm:h-11 sm:w-11"
           />
-          <span className="font-display text-[1.35rem] font-bold tracking-[-.065em] text-white sm:text-[1.45rem]">
+          <span className="font-display text-[2rem] font-bold tracking-[-.065em] text-white sm:text-[2.2rem]">
             TarVance
           </span>
         </Link>
