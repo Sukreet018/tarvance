@@ -182,19 +182,43 @@ export default function PageTransition() {
       };
       document.addEventListener("click", onClick, true);
 
-      // Intro: the page starts covered (see CSS) and the columns sweep away once fonts are ready.
+      // Intro: the page starts covered (see CSS). Play the same logo animation as a page change,
+      // then sweep the columns away once the logo is done and fonts are ready.
       isTransitioning.current = true;
       prepareLogo();
       gsap.set(blocks, { transformOrigin: "right center", scaleX: 1 });
       const fontsReady = document.fonts?.ready ?? Promise.resolve();
-      Promise.race([
-        fontsReady,
-        new Promise((resolve) => {
-          introTimer = window.setTimeout(resolve, 900);
-        }),
-      ]).then(() => {
-        if (!disposed) reveal();
-      });
+      gsap
+        .timeline({
+          onComplete: () => {
+            Promise.race([
+              fontsReady,
+              new Promise((resolve) => {
+                introTimer = window.setTimeout(resolve, 600);
+              }),
+            ]).then(() => {
+              if (!disposed) reveal();
+            });
+          },
+        })
+        .set(logoOverlay, { opacity: 1 })
+        .to(drawn, {
+          strokeDashoffset: 0,
+          duration: LOGO_DRAW,
+          ease: "power2.inOut",
+          stagger: 0.1,
+        })
+        .to(
+          filled,
+          { fillOpacity: 1, duration: 0.35, ease: "power1.out" },
+          "-=0.35",
+        )
+        .to(texts, { opacity: 1, y: 0, duration: 0.35, stagger: 0.06 }, "-=0.3")
+        .to(
+          logoOverlay,
+          { opacity: 0, duration: 0.25, ease: "power2.out" },
+          "+=0.3",
+        );
 
       return () => document.removeEventListener("click", onClick, true);
     }, overlay);

@@ -30,7 +30,7 @@ export default function AboutPage() {
               running.
             </p>
             <Link to="/contact" className={button("light", "lg", "mt-8")}>
-              Work with us <ArrowUpRight size={17} />
+              Work with us 
             </Link>
           </Reveal>
         </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
               </article>
             </Reveal>
             <Reveal delay={0.08}>
-              <article className="h-full rounded-3xl border border-tar-navy/10 bg-white p-7 sm:p-10">
+              <article className="h-full rounded-3xl border border-tar-navy/10 bg-[#fbf8ee] p-7 sm:p-10">
                 <span className="font-mono text-[11px] uppercase tracking-[.22em] text-[#4264b9]">
                   Also available
                 </span>
@@ -111,7 +111,7 @@ export default function AboutPage() {
           <div className="grid gap-4">
             {principles.map((item, index) => (
               <Reveal key={item.number} delay={index * 0.08}>
-                <article className="rounded-2xl border border-tar-navy/10 bg-white p-6 sm:p-7">
+                <article className="rounded-2xl border border-tar-navy/10 bg-[#fbf8ee] p-6 sm:p-7">
                   <div className="flex items-center gap-4">
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#eaf0ff] text-xs font-extrabold text-[#244ec4]">
                       {item.number}
@@ -133,7 +133,7 @@ export default function AboutPage() {
       <section className="section-pad bg-tar-paper">
         <div className="site-container">
           <Reveal>
-            <div className="rounded-3xl border border-tar-navy/10 bg-white p-8 sm:p-12">
+            <div className="rounded-3xl border border-tar-navy/10 bg-[#fbf8ee] p-8 sm:p-12">
               <div className="grid gap-9 lg:grid-cols-[1fr_.8fr] lg:items-center">
                 <div>
                   <span className="eyebrow">What to expect</span>

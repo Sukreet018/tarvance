@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import {
   FaWhatsapp,
   FaInstagram,
@@ -132,7 +132,7 @@ export default function Footer() {
               className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#a9c5ff] transition hover:text-white"
               to="/contact"
             >
-              Start a project <ArrowUpRight size={15} />
+              Start a project 
             </Link>
           </div>
         </div>

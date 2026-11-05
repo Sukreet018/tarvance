@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useTransform } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import DigitalEarth from "../../visuals/DigitalEarth";
 import { useScrollProgress } from "../../../lib/scroll";
@@ -53,7 +53,7 @@ export default function HeroSection() {
         </p>
         <div className="motion-preset-fade motion-delay-700 mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
           <Link to="/contact" className={button("light", "lg")}>
-            Start a project <ArrowUpRight size={18} />
+            Start a project
           </Link>
           <a
             href="#expertise"
@@ -64,7 +64,7 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      <a
+      {/*<a
         href="#expertise"
         aria-label="Scroll to services"
         className="site-container absolute inset-x-0 bottom-7 z-10 flex items-center justify-end font-mono text-[10px] uppercase tracking-[.2em] text-tar-cream/55 transition-colors hover:text-[#8bb6ff]"
@@ -73,7 +73,7 @@ export default function HeroSection() {
         <span aria-hidden="true" className="ml-3 text-[#8bb6ff]">
           ↓
         </span>
-      </a>
+      </a>*/}
     </section>
   );
 }

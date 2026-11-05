@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, Phone } from "lucide-react";
+import {  Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import Reveal from "../../ui/Reveal";
 import { SITE } from "../../../config/site";
@@ -28,7 +28,7 @@ export default function ContactCTASection() {
                 </p>
               </div>
               <Link to="/contact" className={button("primary", "lg", "w-fit")}>
-                Start a project <ArrowUpRight size={18} />
+                Start a project 
               </Link>
             </div>
             <div className="relative mt-11 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/15 pt-5 text-sm text-white/65">

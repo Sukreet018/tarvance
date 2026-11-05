@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import {
-  ArrowUpRight,
+  Send ,
   CalendarCheck,
   Loader2,
   Mail,
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 description="Call or message us, or send an email. We’ll get back to you as soon as we can."
               />
               <div className="mt-9 grid gap-4">
-                <div className="flex gap-4 rounded-2xl border border-tar-navy/10 bg-white p-5">
+                <div className="flex gap-4 rounded-2xl border border-tar-navy/10 bg-[#fbf8ee] p-5">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf0ff] text-[#244ec4]">
                     <Mail size={20} />
                   </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex gap-4 rounded-2xl border border-tar-navy/10 bg-white p-5">
+                <div className="flex gap-4 rounded-2xl border border-tar-navy/10 bg-[#fbf8ee] p-5">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf0ff] text-[#244ec4]">
                     <Phone size={20} />
                   </div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex gap-4 rounded-2xl border border-tar-navy/10 bg-white p-5">
+                <div className="flex gap-4 rounded-2xl border border-tar-navy/10 bg-[#fbf8ee] p-5">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf0ff] text-[#244ec4]">
                     <MapPin size={20} />
                   </div>
@@ -148,7 +148,7 @@ export default function ContactPage() {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="rounded-3xl border border-tar-navy/10 bg-white p-6 shadow-[0_20px_70px_rgba(7,22,63,.05)] sm:p-9">
+            <div className="rounded-3xl border border-tar-navy/10 bg-[#fbf8ee] p-6 shadow-[0_20px_70px_rgba(7,22,63,.05)] sm:p-9">
               <div className="mb-7">
                 <h2 className="font-display text-2xl font-bold tracking-[-.04em] text-tar-navy">
                   Send a message
@@ -290,7 +290,7 @@ export default function ContactPage() {
                         </>
                       ) : (
                         <>
-                          Send your message <ArrowUpRight size={17} />
+                          Send your message  <Send />
                         </>
                       )}
                     </button>

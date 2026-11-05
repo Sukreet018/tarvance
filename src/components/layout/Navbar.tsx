@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 
 const links = [
   { label: "Home", to: "/" },
@@ -57,7 +57,7 @@ export default function Navbar() {
           to="/contact"
           className="ml-auto hidden items-center gap-2 rounded-full border border-white/20 bg-white/[.07] px-4 py-3 text-[11px] font-semibold uppercase tracking-[.12em] text-white transition hover:border-[#8bb6ff]/70 hover:bg-white/12 sm:inline-flex lg:ml-0 lg:justify-self-end"
         >
-          Start a project <ArrowUpRight size={15} />
+          Start a project 
         </Link>
 
         <button
@@ -97,7 +97,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#8bb6ff]/50 bg-[#8bb6ff]/10 px-5 text-xs font-semibold uppercase tracking-[.12em] text-white transition hover:bg-[#8bb6ff]/20"
             >
-              Start a project <ArrowUpRight size={16} />
+              Start a project 
             </Link>
           </div>
         </nav>

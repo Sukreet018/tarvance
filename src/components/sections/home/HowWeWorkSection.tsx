@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import {
-  ArrowDownRight,
   ArrowUpRight,
   Compass,
   Lightbulb,
@@ -172,9 +171,7 @@ export default function HowWeWorkSection() {
             />
 
             <div className="mt-8 hidden items-center gap-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#5974b4] lg:flex">
-              <span className="grid h-10 w-10 place-items-center rounded-full border border-[#244ec4]/20 bg-white/70">
-                <ArrowDownRight size={17} />
-              </span>
+              
               Five steps, start to finish
             </div>
 

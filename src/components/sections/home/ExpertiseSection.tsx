@@ -63,23 +63,21 @@ function Chapter({ service, index }: { service: Service; index: number }) {
   return (
     <article
       ref={ref}
-      className="relative grid items-center gap-14 border-t border-tar-navy/10 py-16 lg:min-h-svh lg:grid-cols-12 lg:gap-10 lg:py-24"
+      className="relative grid items-center gap-8 border-t border-tar-navy/10 py-10 sm:gap-12 sm:py-14 lg:min-h-svh lg:grid-cols-12 lg:gap-10 lg:py-24"
     >
       {/* Text */}
       <div className={`relative lg:col-span-5 ${flip ? "lg:col-start-8" : ""}`}>
         <motion.span
           aria-hidden
           style={{ y: numeralY }}
-          className="pointer-events-none absolute -top-16 -left-2 select-none font-display text-[clamp(9rem,22vw,15rem)] leading-none text-[#2b56d7]/10 will-change-transform"
+          className="pointer-events-none absolute -top-10 -left-2 sm:-top-16 select-none font-display text-[clamp(6rem,22vw,15rem)] leading-none text-[#2b56d7]/10 will-change-transform"
         >
           {service.number}
         </motion.span>
 
         <div className="relative">
           <Reveal>
-            <span className="eyebrow">
-              {service.side ? "Add-on service" : "What we do"}
-            </span>
+            
             <h3 className="display-heading mt-5 text-4xl text-tar-navy sm:text-5xl lg:text-6xl">
               {service.title}
             </h3>
@@ -106,10 +104,10 @@ function Chapter({ service, index }: { service: Service; index: number }) {
       <div
         className={`lg:col-span-7 ${flip ? "lg:col-start-1 lg:row-start-1" : "lg:col-start-6"}`}
       >
-        <div className="relative pb-10 sm:pr-6">
+        <div className="relative pb-8 sm:pb-10 sm:pr-6">
           <motion.div
             style={{ y: boxY }}
-            className="relative h-104 overflow-hidden rounded-3xl bg-tar-navy shadow-[0_30px_80px_rgba(7,22,63,.28)] will-change-transform sm:h-144 lg:h-176"
+            className="relative h-60 overflow-hidden rounded-2xl bg-tar-navy shadow-[0_30px_80px_rgba(7,22,63,.28)] will-change-transform min-[480px]:h-72 sm:h-96 sm:rounded-3xl md:h-112 lg:h-176"
           >
             <motion.img
               src={`${import.meta.env.BASE_URL}services/${service.image}`}
@@ -123,25 +121,25 @@ function Chapter({ service, index }: { service: Service; index: number }) {
               aria-hidden
               className="absolute inset-0 bg-linear-to-t from-tar-navy/45 via-transparent to-transparent"
             />
-            <span className="absolute top-5 left-5 flex h-12 w-12 items-center justify-center rounded-xl bg-tar-navy/80 text-[#8bb6ff]">
+            <span className="absolute top-3 left-3 flex h-10 w-10 sm:top-5 sm:left-5 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-tar-navy/80 text-[#8bb6ff]">
               <Icon size={22} strokeWidth={1.6} />
             </span>
           </motion.div>
 
           <motion.div
             style={{ y: cardY }}
-            className={`absolute bottom-0 w-[68%] max-w-xs rounded-2xl border border-tar-navy/10 bg-tar-paper p-5 shadow-[0_24px_55px_rgba(7,22,63,.18)] will-change-transform ${flip ? "right-4 sm:right-0" : "left-4 sm:left-auto sm:right-0"}`}
+            className={`absolute bottom-0 w-[46%] max-w-38 rounded-lg border border-tar-navy/10 bg-tar-paper p-2 shadow-[0_14px_30px_rgba(7,22,63,.18)] will-change-transform min-[480px]:w-[52%] min-[480px]:max-w-44 min-[480px]:p-2.5 sm:w-[68%] sm:max-w-xs sm:rounded-2xl sm:p-5 sm:shadow-[0_24px_55px_rgba(7,22,63,.18)] ${flip ? "right-2 sm:right-0" : "left-2 sm:left-auto sm:right-0"}`}
           >
-            <p className="font-mono text-[10px] tracking-[.2em] text-[#3558a8] uppercase">
+            <p className="font-mono text-[8px] tracking-[.16em] text-[#3558a8] uppercase sm:text-[10px] sm:tracking-[.2em]">
               Includes
             </p>
-            <ul className="mt-2">
+            <ul className="mt-1 sm:mt-2">
               {service.tags.map((tag) => (
                 <li
                   key={tag}
-                  className="flex items-center gap-3 border-t border-tar-navy/10 py-2.5 text-sm font-semibold text-tar-navy first:border-t-0"
+                  className="flex items-center gap-1.5 border-t border-tar-navy/10 py-0.5 text-[10px] leading-tight font-semibold text-tar-navy first:border-t-0 min-[480px]:py-1 min-[480px]:text-[11px] sm:gap-3 sm:py-2.5 sm:text-sm"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#2b56d7]" />
+                  <span className="h-1 w-1 shrink-0 rounded-full bg-[#2b56d7] sm:h-1.5 sm:w-1.5" />
                   {tag}
                 </li>
               ))}
@@ -181,7 +179,7 @@ export default function ExpertiseSection() {
       </div>
 
       {/* Full-width wrapper so the rail can sit at the far right edge of the screen */}
-      <div ref={listRef} className="relative mt-16">
+      <div ref={listRef} className="relative mt-10 sm:mt-16">
         <div className="pointer-events-none absolute inset-y-0 right-2 z-20 w-7 sm:right-4">
           <div className="pointer-events-auto sticky top-28 flex h-[min(70svh,30rem)] flex-col gap-3">
             {services.map((s, i) => (

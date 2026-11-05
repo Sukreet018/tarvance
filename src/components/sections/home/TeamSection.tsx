@@ -16,7 +16,7 @@ export default function TeamSection({
   title = "Meet the team.",
   description = "We’re a small team based in Kolkata. When you get in touch, you’ll be talking to the people who will actually build your project.",
   showLink = true,
-  className = "bg-tar-paper",
+  className = "bg-tar-cream",
 }: TeamSectionProps) {
   return (
     <section className={`section-pad ${className}`}>

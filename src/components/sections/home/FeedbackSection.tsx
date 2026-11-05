@@ -31,7 +31,7 @@ function Stars({ value }: { value: number }) {
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <article className="flex w-[min(82vw,21.5rem)] flex-none flex-col rounded-2xl border sm:w-96 border-tar-navy/8 bg-white/75 p-6 sm:p-7">
+    <article className="flex w-[min(82vw,21.5rem)] flex-none flex-col rounded-2xl border sm:w-96 border-tar-navy/8 bg-[#fbf8ee]/80 p-6 sm:p-7">
       <div className="flex items-center justify-between">
         <Quote size={25} className="text-[#4264c4]" />
         <Stars value={review.rating} />
@@ -194,7 +194,7 @@ export default function FeedbackSection() {
             <Reveal>
               <form
                 onSubmit={onSubmit}
-                className="grid gap-4 rounded-3xl border border-tar-navy/10 bg-white p-6 shadow-[0_20px_70px_rgba(7,22,63,.05)] sm:p-8"
+                className="grid gap-4 rounded-3xl border border-tar-navy/10 bg-[#fbf8ee] p-6 shadow-[0_20px_70px_rgba(7,22,63,.05)] sm:p-8"
               >
                 <h3 className="font-display text-2xl font-bold tracking-[-.04em] text-tar-navy">
                   Leave a review

@@ -17,7 +17,7 @@ export type Service = {
   image: string;
   tags: string[];
   /** Offered alongside the main software work, not as a standalone focus. */
-  side?: boolean;
+
 };
 
 /**
@@ -78,7 +78,7 @@ export const services: Service[] = [
     icon: Clapperboard,
     image: "content-video.jpg",
     tags: ["Content marketing", "Videography"],
-    side: true,
+
   },
 ];
 

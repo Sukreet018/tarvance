@@ -1,7 +1,6 @@
 import {
   ArrowUpRight,
   CalendarCheck,
-  MessageCircle,
   Phone,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -9,11 +8,13 @@ import { samples } from "../../../data/siteData";
 import Reveal from "../../ui/Reveal";
 import { SITE } from "../../../config/site";
 import { button } from "../../ui/button";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const calls = [
   { label: "Book a call", href: SITE.calendly, Icon: CalendarCheck },
   { label: SITE.phoneDisplay, href: SITE.phoneHref, Icon: Phone },
-  { label: "WhatsApp us", href: SITE.whatsapp, Icon: MessageCircle },
+  { label: "WhatsApp us", href: SITE.whatsapp, Icon: FaWhatsapp },
 ];
 
 export default function SelectedWorkSection() {

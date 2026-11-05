@@ -1,4 +1,4 @@
-import { ArrowUpRight, Compass, Gauge, HeartHandshake } from "lucide-react";
+import { Compass, Gauge, HeartHandshake } from "lucide-react";
 import Reveal from "../../ui/Reveal";
 import SectionHeader from "../../ui/SectionHeader";
 import { cardLift } from "../../ui/patterns";
@@ -38,7 +38,7 @@ export default function BeliefSection() {
             href="#expertise"
             className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#214bc1] hover:text-tar-navy"
           >
-            See what we build <ArrowUpRight size={17} />
+            See what we build 
           </a>
         </Reveal>
         <div className="grid gap-4">
@@ -47,7 +47,7 @@ export default function BeliefSection() {
             return (
               <Reveal key={belief.number} delay={i * 0.08}>
                 <article
-                  className={`${cardLift} grid gap-5 rounded-2xl border border-tar-navy/7.5 bg-white/70 p-6 sm:grid-cols-[54px_1fr] sm:p-7`}
+                  className={`${cardLift} grid gap-5 rounded-2xl border border-tar-navy/7.5 bg-[#fbf8ee]/70 p-6 sm:grid-cols-[54px_1fr] sm:p-7`}
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#eaf0ff] text-[#244ec4]">
                     <Icon size={22} strokeWidth={1.7} />
