@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import {
-  ArrowUpRight,
   Compass,
   Lightbulb,
   MessagesSquare,
@@ -284,16 +283,7 @@ export default function HowWeWorkSection() {
                           <span className="mr-2 text-[#7197ef]">→</span>
                           {step.outcome}
                         </p>
-                        {isLast ? (
-                          <ArrowUpRight
-                            size={20}
-                            className="shrink-0 text-[#c7d9ff]"
-                          />
-                        ) : (
-                          <span className="shrink-0 font-mono text-xs text-[#5974b4]">
-                            {step.number} / 05
-                          </span>
-                        )}
+                        
                       </div>
                     </div>
                   </article>
