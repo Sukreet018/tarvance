@@ -21,6 +21,6 @@ export const team: TeamMember[] = [
   { photo: `${import.meta.env.BASE_URL}team/member-07.jpg` ,name:"Rahul" ,role:"Operations Expert"},
   { photo: `${import.meta.env.BASE_URL}team/member-08.jpg` ,name:"Gaurav",role:"Operations Head"},
   { photo: `${import.meta.env.BASE_URL}team/member-09.jpg`, name: "Ritupriya",role:"Content Specialist" },
-  { photo: `${import.meta.env.BASE_URL}team/member-10.jpg` ,name:"",role:""},
-  { photo: `${import.meta.env.BASE_URL}team/member-11.jpg`,name:"",role:"" },
+  { photo: `${import.meta.env.BASE_URL}team/member-10.jpg` ,name:"Tidip",role:"Content Specialist"},
+  { photo: `${import.meta.env.BASE_URL}team/member-11.jpg`,name:"Pranav",role:"Software Lead" },
 ];
