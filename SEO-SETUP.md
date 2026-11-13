@@ -9,6 +9,7 @@ Repo -> Settings -> Pages:
 - Custom domain: your real domain (the code assumes `https://tarvance.com`; if you use `www.`, change `siteUrl` in `src/seo/seo.json` and `SITE_URL` in `.github/workflows/deploy.yml`).
 - Tick "Enforce HTTPS".
 
+
 ## 3. Things only you can do (these decide ranking more than code)
 1. **Google Search Console**: add the domain, verify, submit `https://tarvance.com/sitemap.xml`, then "Request indexing" for each page.
 2. **Bing Webmaster Tools**: import from Search Console. ChatGPT search and Copilot use Bing's index.
