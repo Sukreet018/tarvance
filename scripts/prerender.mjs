@@ -21,6 +21,7 @@ const dist = join(root, "dist");
 const seo = JSON.parse(readFileSync(join(root, "src/seo/seo.json"), "utf8"));
 const siteUrl = (process.env.SITE_URL || seo.siteUrl).replace(/\/$/, "");
 const b = seo.business;
+const base = (process.env.BASE_PATH || "/").replace(/\/?$/, "/");
 const today = new Date().toISOString().slice(0, 10);
 
 const esc = (s) =>
@@ -189,7 +190,7 @@ function faqHtml(faqs) {
 
 function bodyFor(path, page) {
   const parts = [];
-  parts.push(`<header><a href="/">TarVance</a><nav aria-label="Main">${NAV.map(([h, l]) => `<a href="${h}">${esc(l)}</a>`).join(" ")}</nav></header>`);
+  parts.push(`<header><a href="${base}">TarVance</a><nav aria-label="Main">${NAV.map(([h, l]) => `<a href="${base}${h.slice(1)}">${esc(l)}</a>`).join(" ")}</nav></header>`);
   parts.push(`<main><h1>${esc(path === "/" ? "We build digital solutions. Software company in Kolkata." : page.h1)}</h1><p>${esc(page.intro)}</p>`);
 
   if (page.sections) {
@@ -209,14 +210,13 @@ function bodyFor(path, page) {
   parts.push(`<section><h2>Contact TarVance</h2><address>${esc(b.streetAddress)}, ${esc(b.locality)} – ${esc(b.postalCode)}, ${esc(b.region)}, India<br>Phone: <a href="tel:${esc(b.telephone)}">+91 82820 17341</a><br>Email: <a href="mailto:${esc(b.email)}">${esc(b.email)}</a></address></section></main>`);
   parts.push(`<footer><p>© ${new Date().getFullYear()} TarVance, Kolkata, India.</p></footer>`);
 
-  const css = `<style>#seo-static{min-height:100vh;box-sizing:border-box;padding:6rem 1.5rem 3rem;background:#030916;color:#f4efe2;font-family:"Inter Tight",system-ui,sans-serif;line-height:1.65}#seo-static a{color:#8bb6ff}#seo-static header,#seo-static nav{display:flex;flex-wrap:wrap;gap:1rem}#seo-static main{max-width:56rem;margin:2rem auto}#seo-static h1{font-size:2.4rem;line-height:1.1}#seo-static blockquote{margin:1rem 0;padding-left:1rem;border-left:2px solid #2b56d7}</style>`;
-  return `<div id="root"><div id="seo-static">${css}${parts.join("")}</div></div>`;
+  return `<div id="seo-static" aria-hidden="true" style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">${parts.join("")}</div>`;
 }
 
 /* ---------- write pages ---------- */
 function render(path, page) {
   let html = template.replace(/<!--seo:start-->[\s\S]*?<!--seo:end-->/, headFor(path, page));
-  html = html.replace(/<div id="root"><\/div>/, bodyFor(path, page));
+  html = html.replace(/<div id="root"><\/div>/, `<div id="root"></div>${bodyFor(path, page)}`);
   return html;
 }
 
