@@ -1,5 +1,4 @@
 import {
-  ArrowUpRight,
   CalendarCheck,
   Phone,
 } from "lucide-react";
@@ -76,10 +75,7 @@ export default function SelectedWorkSection() {
                   </div>
                   <span className="mt-2 inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-widest text-tar-royal">
                     Sample{" "}
-                    <ArrowUpRight
-                      size={16}
-                      className="transition group-hover:translate-x-1 group-hover:-translate-y-1"
-                    />
+              
                   </span>
                 </div>
               </a>

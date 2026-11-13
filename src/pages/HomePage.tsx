@@ -7,6 +7,7 @@ import FeedbackSection from "../components/sections/home/FeedbackSection";
 import FaqSection from "../components/sections/home/FaqSection";
 import ContactCTASection from "../components/sections/home/ContactCTASection";
 import TechParallaxSection from "../components/sections/home/TechParallaxSection";
+import LiveProjectsSection from "../components/sections/home/LiveProjectsSection";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <BeliefSection />
       <ExpertiseSection />
       <SelectedWorkSection />
+      <LiveProjectsSection />
       <TechParallaxSection />
       <FeedbackSection />
       <FaqSection />

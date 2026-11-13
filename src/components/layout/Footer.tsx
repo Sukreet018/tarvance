@@ -133,7 +133,9 @@ export default function Footer() {
               >
                 {SITE.email}
               </a>
+            <span>GST: 19AVNPD7888F1ZX</span>
             </address>
+            
             <Link
               className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#a9c5ff] transition hover:text-white"
               to="/contact"
