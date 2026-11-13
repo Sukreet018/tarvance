@@ -53,6 +53,7 @@ export default function ContactPage() {
 
   return (
     <>
+      <h1 className="sr-only">Contact TarVance, software company in Kolkata</h1>
       <ZoomHero
         label="Contact us"
         text="Tell us what you’re thinking."

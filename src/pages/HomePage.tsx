@@ -4,6 +4,7 @@ import ExpertiseSection from "../components/sections/home/ExpertiseSection";
 import SelectedWorkSection from "../components/sections/home/SelectedWorkSection";
 
 import FeedbackSection from "../components/sections/home/FeedbackSection";
+import FaqSection from "../components/sections/home/FaqSection";
 import ContactCTASection from "../components/sections/home/ContactCTASection";
 import TechParallaxSection from "../components/sections/home/TechParallaxSection";
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <SelectedWorkSection />
       <TechParallaxSection />
       <FeedbackSection />
+      <FaqSection />
       <ContactCTASection />
     </>
   );

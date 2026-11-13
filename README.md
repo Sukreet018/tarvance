@@ -126,3 +126,12 @@ This project includes a GitHub Actions workflow at `.github/workflows/deploy.yml
 4. After it succeeds, the project site URL is `https://YOUR-USERNAME.github.io/TarVance/` (replace `TarVance` with your repository name if different).
 
 Do not upload `node_modules`; run `npm ci` after extracting or cloning.
+
+
+## SEO and AI search (added)
+
+- `src/seo/seo.json` is the single place for page titles, descriptions, FAQs, service list, address and areas served (Kolkata, Maharashtra). Edit it, push, done.
+- `npm run build` now also runs `scripts/prerender.mjs`, which writes real HTML for `/`, `/about`, `/contact`, `/software-company-kolkata` and `/website-development-maharashtra`, with meta tags, JSON-LD (business, services, FAQ, breadcrumbs), `sitemap.xml`, `robots.txt` and `llms.txt`.
+- Reviews from the Google Sheet are fetched at build time and written into the home page HTML. A weekly scheduled rebuild keeps them current.
+- If you change the services in `src/data/siteData.ts`, make the same change in `src/seo/seo.json` (`services`).
+- Domain is set in `seo.json` (`siteUrl`) and in `.github/workflows/deploy.yml` (`SITE_URL`).

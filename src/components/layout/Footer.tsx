@@ -100,6 +100,12 @@ export default function Footer() {
               <Link className={FOOTER_LINK} to="/#work">
                 Selected work
               </Link>
+              <Link className={FOOTER_LINK} to="/software-company-kolkata">
+                Software company in Kolkata
+              </Link>
+              <Link className={FOOTER_LINK} to="/website-development-maharashtra">
+                Development in Maharashtra
+              </Link>
               <Link className={FOOTER_LINK} to="/contact">
                 Contact
               </Link>

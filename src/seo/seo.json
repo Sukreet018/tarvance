@@ -1,0 +1,164 @@
+{
+  "siteUrl": "https://tarvance.com",
+  "siteName": "TarVance",
+  "business": {
+    "legalName": "TarVance",
+    "description": "TarVance is a software company in Kolkata that builds custom software, business websites, Google Business Profiles and SEO for businesses in Kolkata, Maharashtra and across India.",
+    "telephone": "+918282017341",
+    "email": "contact@tarvance.com",
+    "streetAddress": "227/10/1 Manicktala Main Road",
+    "locality": "Kolkata",
+    "region": "West Bengal",
+    "postalCode": "700054",
+    "country": "IN",
+    "areaServed": ["Kolkata", "West Bengal", "Maharashtra", "Mumbai", "Pune", "Nagpur", "India"],
+    "sameAs": [
+      "https://www.instagram.com/tarvanceweb",
+      "https://www.facebook.com/profile.php?id=61594404690999",
+      "https://www.linkedin.com/company/tarvance/"
+    ]
+  },
+  "services": [
+    { "name": "Custom software", "description": "Web apps, dashboards, booking and billing systems and internal tools built around how your business already runs." },
+    { "name": "Website development", "description": "Custom-built, fast, mobile-friendly business websites with clear pages and an easy way for customers to get in touch." },
+    { "name": "Google Business Profile setup", "description": "Setup and optimisation of your Google Business Profile so nearby customers can find you on Google Search and Maps." },
+    { "name": "SEO", "description": "Practical search optimisation: page structure, site speed and content that helps people find you when they search for what you do." },
+    { "name": "Maintenance and support", "description": "Updates, fixes and small changes after launch to keep your website, software and Google profile accurate, secure and running." },
+    { "name": "Content and video", "description": "Content writing and video production as an add-on to our website and software work." }
+  ],
+  "faqs": [
+    {
+      "q": "What does TarVance do?",
+      "a": "TarVance is a software company based in Kolkata. We build custom software and business websites, set up and optimise Google Business Profiles, and handle SEO and ongoing maintenance."
+    },
+    {
+      "q": "Do you build websites and software for businesses in Kolkata?",
+      "a": "Yes. Our office is on Manicktala Main Road in Kolkata, and we work with local businesses such as clinics, gyms, cafés, salons and shops, in person or remotely."
+    },
+    {
+      "q": "Do you work with businesses in Maharashtra, Mumbai and Pune?",
+      "a": "Yes. We work with clients across Maharashtra, including Mumbai, Pune and Nagpur, remotely by phone, WhatsApp and video call. Everything is agreed in writing, so distance doesn't get in the way."
+    },
+    {
+      "q": "How much does a website or custom software cost?",
+      "a": "It depends on what you need. After a first conversation we send a written scope, timeline and price, so you know what you're paying for before any work begins."
+    },
+    {
+      "q": "Can you help my business show up on Google Maps?",
+      "a": "Yes. We set up and optimise your Google Business Profile with the right details, photos and hours, and combine it with local SEO on your website."
+    },
+    {
+      "q": "Do you provide support after the website or software goes live?",
+      "a": "Yes. We offer maintenance and support for updates, fixes and small changes, and keep your website, software and Google profile accurate and secure."
+    },
+    {
+      "q": "How do I get started with TarVance?",
+      "a": "Call or WhatsApp us on +91 82820 17341, email contact@tarvance.com, or use the form on our contact page. A rough idea is enough to begin."
+    }
+  ],
+  "pages": {
+    "/": {
+      "title": "TarVance – Software & Website Development, Kolkata",
+      "description": "TarVance is a Kolkata software company building custom software, websites, Google Business Profiles and SEO for businesses in Kolkata and Maharashtra.",
+      "h1": "We build digital solutions.",
+      "intro": "TarVance is a software company in Kolkata. We build custom software and business websites, set up Google Business Profiles and handle SEO, for businesses in Kolkata, Maharashtra and across India."
+    },
+    "/about": {
+      "title": "About TarVance – Software Company in Kolkata",
+      "description": "Meet TarVance, a small software team in Kolkata. We build custom software and websites, set up Google Business Profiles, and stay on after launch.",
+      "h1": "About TarVance",
+      "intro": "TarVance builds custom software and websites for businesses. We also set up Google Business Profiles and handle SEO so customers can find you. Once you're live, we stay on to keep things running. We are a small team based in Kolkata, India."
+    },
+    "/contact": {
+      "title": "Contact TarVance – Get a Quote | Kolkata",
+      "description": "Call, WhatsApp or email TarVance in Kolkata to discuss your website or software project. A rough idea is enough. We reply with a written scope and quote.",
+      "h1": "Contact TarVance",
+      "intro": "Call us, message us on WhatsApp, or use the contact form. A rough idea is enough to get started, and you don't need to know the technical details."
+    },
+    "/software-company-kolkata": {
+      "title": "Software & Website Company in Kolkata | TarVance",
+      "description": "Custom software, websites, Google Business Profile setup and SEO from a Kolkata team. Office on Manicktala Main Road. Written quote before work starts.",
+      "h1": "Software and website company in Kolkata",
+      "intro": "TarVance is a software company based on Manicktala Main Road, Kolkata. We build custom software, business websites and Google Business Profiles for Kolkata businesses, and look after them after launch.",
+      "eyebrow": "Kolkata",
+      "sections": [
+        {
+          "h2": "Built for Kolkata businesses",
+          "body": [
+            "Most of our clients are local businesses that need customers to find them and a simple way to get in touch: clinics, gyms, cafés, salons, shops and service providers. We design the website or software around how your business already works.",
+            "Because our office is in Kolkata, we can meet in person at the start of a project, or work over phone, WhatsApp and video call if that is easier for you."
+          ]
+        },
+        {
+          "h2": "Get found on Google in Kolkata",
+          "body": [
+            "When someone nearby searches for what you do, your Google Business Profile and your website both matter. We set up your profile with the right details, photos and hours, and structure your website pages so Google understands what you offer and where.",
+            "That combination of local SEO, a fast mobile-friendly website and an accurate Google profile is the practical way for a Kolkata business to show up in Search and Maps."
+          ]
+        },
+        {
+          "h2": "How a project works",
+          "body": [
+            "We start with a conversation about your business, then send a written scope, timeline and price. You see the design before we build, we share regular updates, and we stay available for fixes and changes after launch."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where is TarVance's office in Kolkata?",
+          "a": "227/10/1 Manicktala Main Road, Kolkata – 700054, West Bengal."
+        },
+        {
+          "q": "Can you build a website for my small business in Kolkata?",
+          "a": "Yes. We build custom, mobile-friendly websites for small businesses and send a written quote before starting."
+        },
+        {
+          "q": "Can you set up my Google Business Profile in Kolkata?",
+          "a": "Yes. We create or fix your profile, add the right details, photos and hours, and connect it with your website."
+        }
+      ]
+    },
+    "/website-development-maharashtra": {
+      "title": "Website & Software Development in Maharashtra | TarVance",
+      "description": "TarVance builds custom software, websites and Google Business Profiles for businesses in Maharashtra, including Mumbai, Pune and Nagpur, working remotely.",
+      "h1": "Website and software development for Maharashtra businesses",
+      "intro": "TarVance is a Kolkata software company that works with businesses across Maharashtra, including Mumbai, Pune and Nagpur. We build custom software, business websites and Google Business Profiles, and handle the work remotely.",
+      "eyebrow": "Maharashtra",
+      "sections": [
+        {
+          "h2": "Working with Maharashtra businesses remotely",
+          "body": [
+            "You don't need to be in the same city to work well with us. We talk over phone, WhatsApp and video call, share designs for approval before building, and agree scope, timeline and price in writing.",
+            "That works for businesses in Mumbai, Pune, Nagpur, Nashik and across Maharashtra that want a dependable software partner."
+          ]
+        },
+        {
+          "h2": "Websites and software that help you get customers",
+          "body": [
+            "We build fast, mobile-friendly websites, custom web apps, dashboards, booking and billing systems and internal tools. For businesses that depend on local customers, we also set up your Google Business Profile and local SEO so you appear when people nearby search for what you do."
+          ]
+        },
+        {
+          "h2": "Support after launch",
+          "body": [
+            "We stay on after the project goes live for updates, fixes and small changes, so your website, software and Google profile stay accurate and secure."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do you work with clients in Mumbai and Pune?",
+          "a": "Yes. We work with businesses across Maharashtra, including Mumbai, Pune and Nagpur, remotely by phone, WhatsApp and video call."
+        },
+        {
+          "q": "Can a Kolkata company build my Maharashtra business website?",
+          "a": "Yes. Everything is agreed in writing and we share regular updates, so working remotely is smooth."
+        },
+        {
+          "q": "Do you offer Google Business Profile and local SEO for Maharashtra cities?",
+          "a": "Yes. We set up and optimise your Google Business Profile and website for the city or area your customers search from."
+        }
+      ]
+    }
+  }
+}

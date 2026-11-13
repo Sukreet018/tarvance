@@ -42,7 +42,7 @@ export default function HeroSection() {
       >
         <p className="motion-preset-fade motion-delay-200 font-mono text-[11px] uppercase tracking-[.28em] text-[#8bb6ff]">
           TarVance <span className="mx-2 text-[#8bb6ff]/40">/</span> Software
-          studio
+          company in Kolkata
         </p>
         <h1 className="display-heading motion-preset-slide-up motion-duration-1000 mt-8 max-w-[11ch] text-[clamp(3rem,10.5vw,10rem)]">
           We build digital <em className="text-[#a9c4ff]">solutions.</em>

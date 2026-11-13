@@ -11,6 +11,7 @@ import { button } from "../components/ui/button";
 export default function AboutPage() {
   return (
     <>
+      <h1 className="sr-only">About TarVance, a software company in Kolkata</h1>
       <ZoomHero
         label="About TarVance"
         text="We connect good ideas to meaningful progress."

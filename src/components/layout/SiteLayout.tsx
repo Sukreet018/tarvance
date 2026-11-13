@@ -5,6 +5,7 @@ import FloatingContact from "./FloatingContact";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import PageTransition from "./PageTransition";
+import Seo from "../seo/Seo";
 import {
   scrollToElement,
   scrollToTopInstant,
@@ -35,6 +36,7 @@ export default function SiteLayout() {
       <PageTransition />
       <Navbar />
       <main>
+        <Seo />
         <Outlet />
         <FloatingContact />
       </main>
